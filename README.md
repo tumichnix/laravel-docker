@@ -5,7 +5,7 @@ Laravel basic docker container with nginx
 ## run
 
 ```
-docker run -p 8080:8080 -v ${PWD}:/var/www/html --name laravel tumichnix/laravel:v2.0.0
+docker run -p 8080:80 -v ${PWD}:/var/www/html --name laravel tumichnix/laravel:v2.0.0
 ```
 
 ## build
