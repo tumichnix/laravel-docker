@@ -1,10 +1,11 @@
-FROM php:8.1.2-fpm-alpine3.15
+FROM php:8.1.3-alpine3.15
 
-LABEL maintainer="Hannes Daus (hannes.daus@schindler.com)"
+LABEL maintainer="Hannes Daus (hannes@daus.family)"
 
 ARG BUILD_COMMIT
 
 ENV ARTISAN_OPTIMIZE="0" \
+    PHP_OPCACHE_ENABLE="1" \
     PHP_OPCACHE_VALIDATE_TIMESTAMPS="0" \
     PHP_OPCACHE_MAX_ACCELERATED_FILES="10000" \
     PHP_OPCACHE_MEMORY_CONSUMPTION="192" \
